@@ -12,7 +12,8 @@ function displaySeconds(){
 
 function displayMinutes(){ 
     minutes = Math.floor((seconds - 1) / 60);
-    if (minute < 1) {
+    if (minutes < 1) {
+        minutesblock.innerHTML = "";
     }
     else if (minutes < 2){
     minutesblock.innerHTML = minutes + " minutes has passed";
