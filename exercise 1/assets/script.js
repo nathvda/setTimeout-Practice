@@ -10,11 +10,11 @@ function wouhou(){
       main.innerHTML += wordToDisplay.charAt(i);  
       i++; 
       setTimeout(wouhou, timeout);
+      clearTimeout(timeout);
     }
     }
 
-    clearTimeout(timeout);
-
+    
     wouhou();
 
 
