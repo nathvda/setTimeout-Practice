@@ -1,0 +1,8 @@
+main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-family:arial;
+    font-weight:bold;
+    font-size:50vh;
+}
