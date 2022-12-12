@@ -4,5 +4,12 @@ main{
     align-items: center;
     font-family:arial;
     font-weight:bold;
+}
+
+#seconds{
     font-size:50vh;
+}
+
+#minutes{
+    font-size:25vh;
 }
