@@ -1,21 +1,16 @@
 let main = document.querySelector("main");
 
-let wordToDisplay = "prout";
+let wordToDisplay = "Hello there, how are you doing?";
 
 let i = 0;
 let timeout = 1000;
-function wouhou(){
-   
-    if ( i < wordToDisplay.length){
-      main.innerHTML += wordToDisplay.charAt(i);  
-      i++; 
-      setTimeout(wouhou, timeout);
-      clearTimeout(timeout);
-    }
-    }
+function slowType() {
+  if (i < wordToDisplay.length) {
+    main.innerHTML += wordToDisplay.charAt(i);
+    i++;
+    setTimeout(slowType, timeout);
+    clearTimeout(timeout);
+  }
+}
 
-    
-    wouhou();
-
-
-
+slowType();

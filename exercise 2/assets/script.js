@@ -17,9 +17,9 @@ function displayMinutes(){
     }
     else if (minutes < 2){
     minutesblock.innerHTML = minutes + " minutes has passed";
-} else { minutesblock.innerHTML = minutes + " minutes have passed";
-}
-
+    } else { 
+        minutesblock.innerHTML = minutes + " minutes have passed";
+    }
 }
 
 setInterval(displaySeconds, 1000);
